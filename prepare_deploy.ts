@@ -77,5 +77,22 @@ const htaccessContent = `<IfModule mod_rewrite.c>
 
 fs.writeFileSync(path.join(DEPLOY_DIR, '.htaccess'), htaccessContent);
 
+// 6. Fix Import Paths (../../php -> ../php)
+console.log("Fixing PHP Import Paths...");
+const apiFiles = fs.readdirSync(path.join(DEPLOY_DIR, 'api'));
+for (const file of apiFiles) {
+    if (file.endsWith('.php')) {
+        const filePath = path.join(DEPLOY_DIR, 'api', file);
+        let content = fs.readFileSync(filePath, 'utf8');
+
+        // Replace source relative path with prod relative path
+        if (content.includes('../../php/')) {
+            content = content.replace(/\.\.\/\.\.\/php\//g, '../php/');
+            fs.writeFileSync(filePath, content);
+            console.log(`Updated paths in ${file}`);
+        }
+    }
+}
+
 console.log("Deployment bundle created in /deploy");
 console.log("Upload the contents of 'deploy' to your Hostinger public_html folder.");

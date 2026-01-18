@@ -31,7 +31,7 @@ import {
   Trash2,
 } from "lucide-react";
 import type { Invoice, Client } from "@shared/schema";
-import { format } from "@/lib/date";
+import { format, safeFormat } from "@/lib/date";
 
 export default function InvoicesPage() {
   const [, navigate] = useLocation();
@@ -213,9 +213,11 @@ export default function InvoicesPage() {
                 <TableBody>
                   {filteredInvoices
                     .sort(
-                      (a, b) =>
-                        new Date(b.invoiceDate).getTime() -
-                        new Date(a.invoiceDate).getTime()
+                      (a, b) => {
+                        const dateA = new Date(a.invoiceDate).getTime();
+                        const dateB = new Date(b.invoiceDate).getTime();
+                        return (isNaN(dateB) ? 0 : dateB) - (isNaN(dateA) ? 0 : dateA);
+                      }
                     )
                     .map((invoice) => (
                       <TableRow
@@ -227,11 +229,11 @@ export default function InvoicesPage() {
                         </TableCell>
                         <TableCell>{getClientName(invoice.clientId)}</TableCell>
                         <TableCell className="text-sm text-muted-foreground">
-                          {format(new Date(invoice.periodStart), "MMM d")} -{" "}
-                          {format(new Date(invoice.periodEnd), "MMM d, yyyy")}
+                          {safeFormat(invoice.periodStart, "MMM d")} -{" "}
+                          {safeFormat(invoice.periodEnd, "MMM d, yyyy")}
                         </TableCell>
                         <TableCell className="font-mono text-sm">
-                          {format(new Date(invoice.invoiceDate), "MMM d, yyyy")}
+                          {safeFormat(invoice.invoiceDate, "MMM d, yyyy")}
                         </TableCell>
                         <TableCell className="text-right font-mono font-medium">
                           {formatCurrency(invoice.totalAmount)}

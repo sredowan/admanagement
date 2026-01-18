@@ -1,4 +1,4 @@
-import { format as formatTz, toZonedTime } from "date-fns-tz";
+import { format as formatTz } from "date-fns-tz";
 import { format as formatFns, type FormatOptions } from "date-fns";
 
 let currentTimezone = "Asia/Dhaka";
@@ -31,6 +31,22 @@ export function format(
     // formatTz will convert the timestamp to the target zone across the board.
     // @ts-ignore - The locale type signature in date-fns-tz is slightly stricter than date-fns, but they are compatible at runtime.
     return formatTz(dateObj, formatStr, { timeZone: currentTimezone, ...options });
+}
+
+export function safeFormat(
+    date: Date | string | number | null | undefined,
+    formatStr: string,
+    fallback: string = "-"
+): string {
+    if (!date) return fallback;
+    try {
+        const d = new Date(date);
+        if (isNaN(d.getTime())) return fallback;
+        // reuse our timezone aware format function
+        return format(d, formatStr);
+    } catch (e) {
+        return fallback;
+    }
 }
 
 export * from "date-fns";

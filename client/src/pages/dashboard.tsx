@@ -44,11 +44,11 @@ import { cn } from "@/lib/utils";
 
 export default function Dashboard() {
   const { data: metrics, isLoading: metricsLoading } = useQuery<DashboardMetrics>({
-    queryKey: ["/api/dashboard/metrics"],
+    queryKey: ["/api/dashboard"],
   });
 
   const { data: recentInvoices, isLoading: invoicesLoading } = useQuery<Invoice[]>({
-    queryKey: ["/api/invoices/recent"],
+    queryKey: ["/api/invoices"],
   });
 
   const { data: allInvoices } = useQuery<Invoice[]>({

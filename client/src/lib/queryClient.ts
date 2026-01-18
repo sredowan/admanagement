@@ -13,13 +13,16 @@ export async function apiRequest(
   data?: unknown | undefined,
 ): Promise<Response> {
   // PHP Backend Adapter: Append .php if likely targeting a PHP endpoint
+  // Only apply this transformation in PRODUCTION (when deployed to Hostinger with PHP)
+  // In development (localhost), we target the Node.js server which uses standard routes.
   let finalUrl = url;
-  if (url.startsWith("/api/") && !url.endsWith(".php") && !url.includes("?")) {
-    finalUrl = `${url}.php`;
-  } else if (url.startsWith("/api/") && !url.endsWith(".php") && url.includes("?")) {
-    // Handle query params: /api/clients?id=1 -> /api/clients.php?id=1
-    const parts = url.split("?");
-    finalUrl = `${parts[0]}.php?${parts[1]}`;
+  if (import.meta.env.PROD) {
+    if (url.startsWith("/api/") && !url.endsWith(".php") && !url.includes("?")) {
+      finalUrl = `${url}.php`;
+    } else if (url.startsWith("/api/") && !url.endsWith(".php") && url.includes("?")) {
+      const parts = url.split("?");
+      finalUrl = `${parts[0]}.php?${parts[1]}`;
+    }
   }
 
   const res = await fetch(finalUrl, {

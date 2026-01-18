@@ -1,0 +1,148 @@
+My Problem:
+Actual facebook cost: 10000
+i charge: actual facebook cost*0.20+actual facebook cost
+
+Convert dollar: 10000/current dollar rate($1=122)
+
+Have to pay: 128 Per dollar to a party
+
+Bkash Charge: 1.8% per transanction (calculate bkash charge based on 10000 cost)
+
+Calculate my profit
+
+I input daily ad cost for my client for fb, google, linkedin,
+
+have to create invoice from 3 days ad cost or sometime 4 days ad cost, sometime different period ad cost
+
+some times i need to invoice salary along with ad costs, or other payment if occurs
+
+i will provide in screen shoot of my current excel sheet that i manage for tracking client payments invoicing
+
+attached images are my current current tracking system and invoicing for a client
+
+i have multiple clients for give me prompt for a web app management so that it can help me all this a
+
+
+
+
+
+Build a web-based Ad Agency Billing & Invoice Management System to replace Excel sheets and manual invoice creation.
+
+The system must support multiple clients, daily ad cost tracking, dynamic invoice periods, currency conversion, payment tracking, and automatic profit calculation.
+🧩 Core Features
+1️⃣ Client Management
+Create & manage multiple clients
+Client details:
+Company name
+Contact person
+Phone / Email
+Billing address
+Default markup percentage (e.g. 20%)
+Default VAT % (optional)
+Notes
+2️⃣ Daily Ad Cost Entry (Core)
+For each client, allow daily ad cost input:
+
+Date
+Platform (Facebook, Google, LinkedIn, YouTube, Other)
+Campaign name (optional)
+Daily spend (BDT)
+Auto-calculate:
+Cost + VAT (if enabled)
+Ability to filter by date range
+Monthly & custom-period summaries
+3️⃣ Flexible Invoice Periods (Very Important)
+Allow invoices to be created for:
+
+Any custom date range:
+3 days
+4 days
+Weekly
+Monthly
+Any manual period
+Invoice can include:
+
+Selected ad costs from chosen dates
+Optional line items:
+Salary
+Adjustment
+Previous due
+Misc services
+4️⃣ Currency & Cost Logic (Your Business Model)
+System must support:
+
+Facebook Cost Logic
+Input:
+Actual ad cost in BDT
+Facebook dollar rate (e.g. $1 = 122)
+Supplier dollar rate (e.g. $1 = 128)
+bKash fee % (default 1.8%)
+Auto Calculations:
+USD spend = BDT / FB dollar rate
+Supplier payment = USD × supplier rate
+bKash fee = actual cost × 1.8%
+Agency markup = actual cost × client markup %
+Net profit calculation per invoice
+📊 Profit breakdown:
+
+Client paid
+Supplier cost
+Transaction fee
+Net profit
+5️⃣ Invoice Generation (Professional)
+Generate downloadable & printable invoices (PDF) with:
+
+Agency logo & info
+Client details
+Invoice number (auto)
+Invoice date
+Billing period
+Itemized table:
+Ad costs (by platform/date)
+Salary / adjustments (if added)
+Subtotal
+VAT (if any)
+Total invoice amount
+Payments received
+Current due balance
+Signature section
+6️⃣ Payment Tracking
+Track payments per client:
+
+Date
+Amount
+Method (Cash, bKash, Bank)
+Notes (e.g. adjustment, installment)
+Auto-calculate:
+
+Total paid
+Outstanding due
+Advance balance (if overpaid)
+7️⃣ Dashboard & Reports
+Overall dashboard:
+Total billed
+Total received
+Total outstanding
+Total profit
+Client-wise report
+Monthly profit report
+Platform-wise spend report
+8️⃣ UX / UI Requirements
+Clean, professional, finance-style UI
+Desktop-first, mobile-friendly
+Table views similar to Excel (easy transition)
+Filters, search, export (PDF / CSV)
+Dark & light mode (optional)
+9️⃣ Tech Preferences
+Modern web stack (React / Next.js preferred)
+Backend with database (PostgreSQL / Firebase / Supabase)
+Secure authentication
+Role-based access (Admin, Accountant – optional)
+🧠 Extra Smart Features (Optional but Valuable)
+Auto-carry forward previous dues
+Duplicate invoice
+Profit warning if margin goes negative
+Editable dollar rates per invoice
+Client-specific payment terms
+✅ Outcome
+This app should fully replace Excel, reduce billing errors, save time, and give clear profit visibility per client, per invoice, per month.

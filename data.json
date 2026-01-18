@@ -1,0 +1,312 @@
+{
+  "users": [],
+  "clients": [
+    {
+      "id": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "companyName": "Hadi Group",
+      "contactPerson": "Rashed Hadi",
+      "phone": "01931313130",
+      "email": "rashedhadigroup@gmail.com",
+      "billingAddress": null,
+      "defaultMarkupPercent": 20,
+      "defaultVatPercent": 0,
+      "notes": null
+    },
+    {
+      "id": "1051081c-312a-4b81-99b7-9d694dcd5c49",
+      "companyName": "iNTECH PROPERTIES LTD",
+      "contactPerson": null,
+      "phone": "01958600068",
+      "email": "info@intechproperties.com.bd",
+      "billingAddress": null,
+      "defaultMarkupPercent": 20,
+      "defaultVatPercent": 0,
+      "notes": null
+    },
+    {
+      "id": "bf236975-66e0-42dc-b571-eaf322c050ee",
+      "companyName": "Lakemba Mobile King",
+      "contactPerson": "Md Ayman",
+      "phone": null,
+      "email": null,
+      "billingAddress": null,
+      "defaultMarkupPercent": 20,
+      "defaultVatPercent": 0,
+      "notes": null
+    },
+    {
+      "id": "e0ac1194-b6bb-4dbf-9824-6a0dbfaa43b0",
+      "companyName": "MSS Management Support Services",
+      "contactPerson": "Md Baten Mia",
+      "phone": null,
+      "email": null,
+      "billingAddress": null,
+      "defaultMarkupPercent": 20,
+      "defaultVatPercent": 0,
+      "notes": null
+    }
+  ],
+  "adCosts": [
+    {
+      "id": "06eb98db-aff8-4f83-ad99-963d129c0cc2",
+      "clientId": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "date": "2025-12-14",
+      "platform": "Facebook",
+      "campaignName": "Hadi City Lead Ad",
+      "spendBdt": 974,
+      "invoiced": true,
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56"
+    },
+    {
+      "id": "70ba8fe1-32f0-46b0-8810-91fd2738f7d5",
+      "clientId": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "date": "2025-12-15",
+      "platform": "Facebook",
+      "campaignName": "Hadi City Lead Ad",
+      "spendBdt": 875,
+      "invoiced": true,
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56"
+    },
+    {
+      "id": "a611e1ed-2613-4037-aa66-f30ab1efe8c4",
+      "clientId": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "date": "2025-12-14",
+      "platform": "Facebook",
+      "campaignName": "Hadi Shopno Nir Lead Ad",
+      "spendBdt": 976,
+      "invoiced": true,
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56"
+    },
+    {
+      "id": "3e8d1884-7a92-4c62-82a8-6e7ebb8c8ec2",
+      "clientId": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "date": "2025-12-15",
+      "platform": "Facebook",
+      "campaignName": "Hadi Shopno Nir Lead Ad",
+      "spendBdt": 951,
+      "invoiced": true,
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56"
+    },
+    {
+      "id": "0dc98640-3d78-493b-b30b-0e45e63bc83f",
+      "clientId": "e0ac1194-b6bb-4dbf-9824-6a0dbfaa43b0",
+      "date": "2025-12-14",
+      "platform": "Other",
+      "campaignName": "Hostinger Purchase",
+      "spendBdt": 5238,
+      "invoiced": true,
+      "invoiceId": "e58e46c7-fa90-4bc6-bb62-5dc44072886f"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "invoiceNumber": "INV-20251216-K18J",
+      "clientId": "1f3c2f72-2170-467c-ace4-7886dc53e4cd",
+      "invoiceDate": "2025-12-16",
+      "periodStart": "2025-12-14",
+      "periodEnd": "2025-12-16",
+      "status": "Pending",
+      "subtotal": 4575.2,
+      "vatAmount": 0,
+      "totalAmount": 4657.5536,
+      "paidAmount": 0,
+      "dueAmount": 4657.5536,
+      "fbDollarRate": 122,
+      "supplierDollarRate": 128,
+      "bkashFeePercent": 1.8,
+      "includeBkashFee": true,
+      "markupPercent": 20,
+      "vatPercent": 0,
+      "notes": null
+    },
+    {
+      "id": "e58e46c7-fa90-4bc6-bb62-5dc44072886f",
+      "invoiceNumber": "INV-20251216-FQ3M",
+      "clientId": "e0ac1194-b6bb-4dbf-9824-6a0dbfaa43b0",
+      "invoiceDate": "2025-12-16",
+      "periodStart": "2025-12-10",
+      "periodEnd": "2025-12-16",
+      "status": "Paid",
+      "subtotal": 9826.488,
+      "vatAmount": 0,
+      "totalAmount": 10003.364784,
+      "paidAmount": 10003.3,
+      "dueAmount": 0.06478400000014517,
+      "fbDollarRate": 121.54,
+      "supplierDollarRate": 128,
+      "bkashFeePercent": 1.8,
+      "includeBkashFee": true,
+      "markupPercent": 87.6,
+      "vatPercent": 0,
+      "notes": null
+    },
+    {
+      "id": "eb268660-31d1-424e-a1dd-0b26daa18d2a",
+      "invoiceNumber": "INV-20251216-1M3N",
+      "clientId": "bf236975-66e0-42dc-b571-eaf322c050ee",
+      "invoiceDate": "2025-12-16",
+      "periodStart": "2025-12-10",
+      "periodEnd": "2025-12-16",
+      "status": "Partial",
+      "subtotal": 20000,
+      "vatAmount": 0,
+      "totalAmount": 20000,
+      "paidAmount": 15000,
+      "dueAmount": 5000,
+      "fbDollarRate": 122,
+      "supplierDollarRate": 128,
+      "bkashFeePercent": 1.8,
+      "includeBkashFee": false,
+      "markupPercent": 20,
+      "vatPercent": 0,
+      "notes": null
+    }
+  ],
+  "invoiceItems": [
+    {
+      "id": "57c3bcb9-bc8a-4c7e-9dca-cc98b94e6bb9",
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "itemType": "AdCost",
+      "description": "Facebook Ad - Hadi City Lead Ad",
+      "platform": "Facebook",
+      "date": "2025-12-14",
+      "adCostId": "06eb98db-aff8-4f83-ad99-963d129c0cc2",
+      "actualCost": 974,
+      "amount": 1168.8
+    },
+    {
+      "id": "6eb769b9-54e0-48e4-bded-b5bfbb92a5a6",
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "itemType": "AdCost",
+      "description": "Facebook Ad - Hadi City Lead Ad",
+      "platform": "Facebook",
+      "date": "2025-12-15",
+      "adCostId": "70ba8fe1-32f0-46b0-8810-91fd2738f7d5",
+      "actualCost": 875,
+      "amount": 1050
+    },
+    {
+      "id": "5c6cbba4-5930-4c43-9619-e21dd0305144",
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "itemType": "AdCost",
+      "description": "Facebook Ad - Hadi Shopno Nir Lead Ad",
+      "platform": "Facebook",
+      "date": "2025-12-14",
+      "adCostId": "a611e1ed-2613-4037-aa66-f30ab1efe8c4",
+      "actualCost": 976,
+      "amount": 1171.2
+    },
+    {
+      "id": "42621a1f-cec7-404c-833f-c31afb60e863",
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "itemType": "AdCost",
+      "description": "Facebook Ad - Hadi Shopno Nir Lead Ad",
+      "platform": "Facebook",
+      "date": "2025-12-15",
+      "adCostId": "3e8d1884-7a92-4c62-82a8-6e7ebb8c8ec2",
+      "actualCost": 951,
+      "amount": 1141.2
+    },
+    {
+      "id": "7e27b672-10cb-4a0a-8248-7914820fa598",
+      "invoiceId": "1dacab90-b66c-4b32-96be-f960d6386c56",
+      "itemType": "PreviousDue",
+      "description": "Last payment due",
+      "platform": null,
+      "date": null,
+      "adCostId": null,
+      "actualCost": 44,
+      "amount": 44
+    },
+    {
+      "id": "65f10221-6fa1-4b2b-8483-999938a93a12",
+      "invoiceId": "e58e46c7-fa90-4bc6-bb62-5dc44072886f",
+      "itemType": "AdCost",
+      "description": "Other Ad - Hostinger Purchase",
+      "platform": "Other",
+      "date": "2025-12-14",
+      "adCostId": "0dc98640-3d78-493b-b30b-0e45e63bc83f",
+      "actualCost": 5238,
+      "amount": 9826.488
+    },
+    {
+      "id": "aefc466a-4141-4787-b9cd-1f7996543ecd",
+      "invoiceId": "eb268660-31d1-424e-a1dd-0b26daa18d2a",
+      "itemType": "Misc",
+      "description": "vanguard website ",
+      "platform": null,
+      "date": null,
+      "adCostId": null,
+      "actualCost": 20000,
+      "amount": 20000
+    }
+  ],
+  "payments": [
+    {
+      "id": "460b5c35-6f93-4843-8c1d-eb0729218d40",
+      "clientId": "e0ac1194-b6bb-4dbf-9824-6a0dbfaa43b0",
+      "invoiceId": "e58e46c7-fa90-4bc6-bb62-5dc44072886f",
+      "date": "2025-12-15",
+      "amount": 10003.3,
+      "method": "Cash",
+      "notes": null
+    },
+    {
+      "id": "95f22a04-9137-4c69-91ba-f7f422335e7b",
+      "clientId": "bf236975-66e0-42dc-b571-eaf322c050ee",
+      "invoiceId": "eb268660-31d1-424e-a1dd-0b26daa18d2a",
+      "date": "2025-12-12",
+      "amount": 15000,
+      "method": "bKash",
+      "notes": null
+    }
+  ],
+  "settings": [
+    {
+      "id": "6a151816-6363-4ed4-bc91-9ee169dd57e9",
+      "key": "fbDollarRate",
+      "value": "122"
+    },
+    {
+      "id": "d44eda8b-b898-4586-a0af-804aa130d37f",
+      "key": "supplierDollarRate",
+      "value": "128"
+    },
+    {
+      "id": "7d47c7ee-0b40-4691-8df1-c4d1bd3f92c1",
+      "key": "bkashFeePercent",
+      "value": "1.8"
+    },
+    {
+      "id": "6227efe4-f324-4d1f-bfbc-f382cedb6711",
+      "key": "defaultMarkupPercent",
+      "value": "20"
+    },
+    {
+      "id": "e0df0c3f-d30d-4c3f-b176-f19d1a78001c",
+      "key": "defaultVatPercent",
+      "value": "0"
+    },
+    {
+      "id": "b92307ad-fe17-4a3b-8b06-fa18090c5ff6",
+      "key": "agencyName",
+      "value": "Renetech"
+    },
+    {
+      "id": "d90ff4a6-a018-432f-8f8d-619bcceab49c",
+      "key": "agencyAddress",
+      "value": "House 20, Road 2, Kallanpur"
+    },
+    {
+      "id": "4c6d2193-fc7d-463f-81e4-a30987745b19",
+      "key": "agencyPhone",
+      "value": "01837239670"
+    },
+    {
+      "id": "e2c3fd4a-26ff-4116-b33d-dc79f9be7629",
+      "key": "agencyEmail",
+      "value": "business.renetech@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+// 1. REPORTS: Update Profit Calculation in pages/reports.tsx
+// Instead of summing invoice profits, iterate through PAYMENTS in the selected period.
+// For each Payment:
+//   Get the parent invoice details (invoiceId).
+//   Calculate the "Profit Margin" of that invoice = (InvoiceTotalProfit / InvoiceTotalAmount).
+//   Calculate Realized Profit for this payment = PaymentAmount * Profit Margin.
+//   Sum these up for "Net Profit".
+
+// 2. INVOICE: Display Agency Info in pages/invoice-view.tsx
+// Fetch settings from /api/settings using useQuery.
+// Replace the hardcoded "AdBill Pro" header with:
+//   <h1>{getSetting("agencyName") || "AdBill Pro"}</h1>
+//   <p>{getSetting("agencyAddress")}</p>
+//   <p>{getSetting("agencyPhone")}</p>
+//   <p>{getSetting("agencyEmail")}</p>

@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # API requests should populate normally
+  RewriteRule ^api/ - [L,NC]
+
+  # Sub-directory for assets
+  RewriteRule ^assets/ - [L,NC]
+
+  # If the request is a file or folder, ignore
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Otherwise redirect to index.html (React Router)
+  RewriteRule . index.html [L]
+</IfModule>

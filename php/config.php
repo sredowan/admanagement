@@ -1,9 +1,9 @@
 <?php
 // Configuration for Hostinger Environment
-define('DB_HOST', 'localhost'); // Usually localhost on Hostinger
-define('DB_NAME', 'u123456789_dbname'); // REPLACE with your Hostinger DB Name
-define('DB_USER', 'u123456789_dbuser'); // REPLACE with your Hostinger DB User
-define('DB_PASS', 'YourStrongPassword123!'); // REPLACE with your Hostinger DB Password
+define('DB_HOST', 'localhost'); // Internal connection on Hostinger
+define('DB_NAME', 'u632925822_agencybilling');
+define('DB_USER', 'u632925822_userbill'); 
+define('DB_PASS', 'Redowan173123');
 
 // CORS Configuration
 header("Access-Control-Allow-Origin: *");
